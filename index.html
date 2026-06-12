@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IPv4</title>
+</head>
+<body>
+    <h1>Calculadora de IPv4</h1>
+    
+    <form id="ipv4-form">
+        <div class="form-field">
+            <label for="ip">Endereço</label>
+            <input type="text" id="ip" placeholder="Ex: 192.168.1.1">
+        </div>
+        <div class="form-field">
+            <label for="mask">Máscara</label>
+            <input type="text" id="mask" placeholder="Ex: 24 ou 255.255.255.0">
+        </div>
+        <button type="button" id="btn-calcular">Calcular</button>
+        <div id="resultados">
+        <div class="result-field">
+            <label>Endereço de Rede:</label> <span id="res-rede"></span>
+        </div>
+        <div class="result-field">
+            <label>Broadcast:</label> <span id="res-broadcast"></span>
+        </div>
+        <div class="result-field">
+            <label>Host Inicial:</label> <span id="res-host-inicial"></span>
+        </div>
+        <div class="result-field">
+            <label>Host Final:</label> <span id="res-host-final"></span>
+        </div>
+        <div class="result-field">
+            <label>Quantidade de Hosts:</label> <span id="res-qtd-hosts"></span>
+        </div>
+</div>
+    </form>
+</body>
+</html>
